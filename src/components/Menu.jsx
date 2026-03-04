@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Menu.css';
+import API_BASE_URL from '../config/api';
 
 function Menu() {
   const [menuItems, setMenuItems] = useState([]);
@@ -9,11 +10,24 @@ function Menu() {
   
     const fetchMenu = async () => {
       try {
-        // fetch: Lấy dữ liệu từ file JSON
-        const response = await fetch('/data/menu.json');
-        const data = await response.json();
-
-        setMenuItems(data);
+        // 1. Lấy từ local JSON
+        const localResponse = await fetch('/data/menu.json');
+        const localData = await localResponse.json();
+        
+        // 2. Lấy từ backend API
+        let backendData = [];
+        try {
+          const backendResponse = await fetch(`${API_BASE_URL}/menu`);
+          if (backendResponse.ok) {
+            backendData = await backendResponse.json();
+          }
+        } catch (apiError) {
+          console.warn('Backend API không khả dụng:', apiError);
+        }
+        
+        // 3. Gộp cả 2 nguồn (backend trước để ưu tiên)
+        const mergedData = [...backendData, ...localData];
+        setMenuItems(mergedData);
       } catch (error) {
         console.error('Lỗi khi tải menu:', error);
       }

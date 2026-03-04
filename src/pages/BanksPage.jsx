@@ -1,17 +1,33 @@
 import { useState, useEffect } from 'react';
 import './BanksPage.css';
+import API_BASE_URL from '../config/api';
 
 function BanksPage() {
   // State lưu danh sách ngân hàng
   const [banks, setBanks] = useState([]);
   
-  // Lấy dữ liệu ngân hàng từ JSON
+  // Lấy dữ liệu ngân hàng từ CẢ local JSON VÀ backend API
   useEffect(() => {
     const fetchBanks = async () => {
       try {
-        const response = await fetch('/data/banks.json');
-        const data = await response.json();
-        setBanks(data);
+        // 1. Lấy từ local JSON
+        const localResponse = await fetch('/data/banks.json');
+        const localData = await localResponse.json();
+        
+        // 2. Lấy từ backend API
+        let backendData = [];
+        try {
+          const backendResponse = await fetch(`${API_BASE_URL}/bank`);
+          if (backendResponse.ok) {
+            backendData = await backendResponse.json();
+          }
+        } catch (apiError) {
+          console.warn('Backend API không khả dụng:', apiError);
+        }
+        
+        // 3. Gộp cả 2 nguồn
+        const mergedData = [...backendData, ...localData];
+        setBanks(mergedData);
       } catch (error) {
         console.error('Lỗi khi tải ngân hàng:', error);
       }

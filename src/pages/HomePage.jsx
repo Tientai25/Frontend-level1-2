@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './HomePage.css';
+import API_BASE_URL from '../config/api';
 
 function HomePage() {
   // State lưu danh sách slider
@@ -7,13 +8,28 @@ function HomePage() {
   // State lưu slide hiện tại (bắt đầu từ 0)
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  // Lấy dữ liệu slider từ JSON
+  // Lấy dữ liệu slider từ CẢ local JSON VÀ backend API
   useEffect(() => {
     const fetchSlides = async () => {
       try {
-        const response = await fetch('/data/slider.json');
-        const data = await response.json();
-        setSlides(data);
+        // 1. Lấy từ local JSON
+        const localResponse = await fetch('/data/slider.json');
+        const localData = await localResponse.json();
+        
+        // 2. Lấy từ backend API
+        let backendData = [];
+        try {
+          const backendResponse = await fetch(`${API_BASE_URL}/slider`);
+          if (backendResponse.ok) {
+            backendData = await backendResponse.json();
+          }
+        } catch (apiError) {
+          console.warn('Backend API không khả dụng:', apiError);
+        }
+        
+        // 3. Gộp cả 2 nguồn
+        const mergedData = [...backendData, ...localData];
+        setSlides(mergedData);
       } catch (error) {
         console.error('Lỗi khi tải slider:', error);
       }

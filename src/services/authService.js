@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://699e9ea878dda56d396ac773.mockapi.io/api/v1';
+import API_BASE_URL from '../config/api.js';
 
 const formatDateTime = (date) => {
   const vnDate = new Date(date.getTime() + 7 * 60 * 60 * 1000);
@@ -16,43 +16,30 @@ const authService = {
 
   register: async (userData) => {
     try {
-      // Bước 1: Kiểm tra email đã tồn tại chưa
-      const checkResponse = await fetch(`${API_BASE_URL}/users?email=${userData.email}`);
-      
-      // Xử lý trường hợp 404 (không tìm thấy = email chưa tồn tại = OK)
-      let existingUsers = [];
-      if (checkResponse.ok) {
-        existingUsers = await checkResponse.json();
-      }
-      
-      if (existingUsers.length > 0) {
-        throw new Error('Email đã được sử dụng');
-      }
-      
-      // Bước 2: Tạo tài khoản mới
-      const response = await fetch(`${API_BASE_URL}/users`, {
+      // Gọi API đăng ký từ backend
+      const response = await fetch(`${API_BASE_URL}/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          fullname: userData.fullName,  
+          fullName: userData.fullName,  
           email: userData.email,
           birth: userData.birth || null,  
-          password: userData.password,
-          createdAt: formatDateTime(new Date())
+          password: userData.password
         }),
       });
       
-      if (!response.ok) {
-        throw new Error('Đăng ký thất bại');
+      const data = await response.json();
+      
+      if (!response.ok || data.err !== 0) {
+        throw new Error(data.msg || 'Đăng ký thất bại');
       }
       
-      const data = await response.json();
       return {
         success: true,
-        message: 'Đăng ký thành công!',
-        data: data
+        message: data.msg || 'Đăng ký thành công!',
+        data: data.data
       };
       
     } catch (error) {
@@ -65,40 +52,34 @@ const authService = {
 
   login: async (credentials) => {
     try {
-      // Tìm user theo email
-      const response = await fetch(`${API_BASE_URL}/users?email=${credentials.email}`);
+      // Gọi API login từ backend
+      const response = await fetch(`${API_BASE_URL}/auth/login`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: credentials.email,
+          password: credentials.password
+        }),
+      });
       
-      // Xử lý trường hợp 404 (không tìm thấy = email không tồn tại)
-      let users = [];
-      if (response.ok) {
-        users = await response.json();
+      const data = await response.json();
+      
+      if (!response.ok || data.err !== 0) {
+        throw new Error(data.msg || 'Đăng nhập thất bại');
       }
       
-      if (users.length === 0) {
-        throw new Error('Email không tồn tại');
-      }
-      
-      const user = users[0];
-      
-      // Kiểm tra mật khẩu
-      if (user.password !== credentials.password) {
-        throw new Error('Mật khẩu không đúng');
-      }
-      
+      // Backend đã trả về đúng format: { err, msg, token, expiredAt, user }
       const authData = {
-        err: 0,
-        msg: `Đăng nhập thành công.`,
-        token: 'token_' + Date.now() + '_' + Math.random().toString(36).substring(2),
-        expiredAt: formatDateTime(new Date(Date.now() + 24 * 60 * 60 * 1000)), 
-        user: {
-          // email: user.email,
-          // id: user.id,
-          birth: user.birth || null,
-          name: user.fullname || user.fullName,
-        }
+        err: data.err,
+        msg: data.msg,
+        token: data.token,
+        expiredAt: data.expiredAt,
+        user: data.user
       };
       
-      // Lưu toàn bộ vào localStorage (1 object duy nhất)
+      // Lưu toàn bộ vào localStorage
       authService.saveAuthData(authData);
       
       return {

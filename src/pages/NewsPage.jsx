@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './NewsPage.css';
 import authService from '../services/authService';
+import API_BASE_URL from '../config/api';
 
 function NewsPage() {
   const [allNews, setAllNews] = useState([]);
@@ -12,17 +13,32 @@ function NewsPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6);
   
-  // Lấy dữ liệu tin tức từ API (với token)
+  // Lấy dữ liệu tin tức từ CẢ local JSON VÀ backend API
   useEffect(() => {
     const fetchNews = async () => {
       try {
         setLoading(true);
-  
-        const response = await fetch('/data/news.json');
-        const data = await response.json();
         
-        setAllNews(data);
-        setFilteredNews(data);
+        // 1. Lấy từ local JSON (data mẫu)
+        const localResponse = await fetch('/data/news.json');
+        const localData = await localResponse.json();
+        
+        // 2. Lấy từ backend API (data thật từ MongoDB)
+        let backendData = [];
+        try {
+          const backendResponse = await fetch(`${API_BASE_URL}/news`);
+          if (backendResponse.ok) {
+            backendData = await backendResponse.json();
+          }
+        } catch (apiError) {
+          console.warn('Backend API không khả dụng, chỉ dùng local data:', apiError);
+        }
+        
+        // 3. Gộp cả 2 nguồn dữ liệu (backend trước, local sau)
+        const mergedData = [...backendData, ...localData];
+        
+        setAllNews(mergedData);
+        setFilteredNews(mergedData);
         setLoading(false);
       } catch (error) {
         console.error('Lỗi khi tải tin tức:', error);

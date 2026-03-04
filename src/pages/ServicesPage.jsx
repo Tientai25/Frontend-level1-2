@@ -1,17 +1,33 @@
 import { useState, useEffect } from 'react';
 import './ServicesPage.css';
+import API_BASE_URL from '../config/api';
 
 function ServicesPage() {
   // State lưu danh sách dịch vụ
   const [services, setServices] = useState([]);
   
-  // Lấy dữ liệu dịch vụ từ JSON
+  // Lấy dữ liệu dịch vụ từ CẢ local JSON VÀ backend API
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch('/data/services.json');
-        const data = await response.json();
-        setServices(data);
+        // 1. Lấy từ local JSON
+        const localResponse = await fetch('/data/services.json');
+        const localData = await localResponse.json();
+        
+        // 2. Lấy từ backend API
+        let backendData = [];
+        try {
+          const backendResponse = await fetch(`${API_BASE_URL}/service`);
+          if (backendResponse.ok) {
+            backendData = await backendResponse.json();
+          }
+        } catch (apiError) {
+          console.warn('Backend API không khả dụng:', apiError);
+        }
+        
+        // 3. Gộp cả 2 nguồn
+        const mergedData = [...backendData, ...localData];
+        setServices(mergedData);
       } catch (error) {
         console.error('Lỗi khi tải dịch vụ:', error);
       }
