@@ -42,8 +42,7 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
     adapter: 'sails-mongo',
-    url: 'mongodb+srv://phungtientaicualo2003_db_user:QGrLLPQSvIBG7lh2@newsdb.rm5zlxe.mongodb.net/tintuc_db?retryWrites=true&w=majority',
+    url: process.env.MONGODB_URI || 'mongodb://localhost:27017/tintuc_db',
   },
-
 
 };
