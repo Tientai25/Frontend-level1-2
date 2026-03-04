@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Tư vấn Marketing",
+    "description": "Chiến lược marketing hiệu quả cho doanh nghiệp của bạn",
+    "price": "Từ 5.000.000đ",
+    "features": [
+      "Phân tích thị trường",
+      "Xây dựng thương hiệu",
+      "Marketing online",
+      "SEO & Social Media"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Phát triển Website",
+    "description": "Thiết kế và lập trình website chuyên nghiệp",
+    "price": "Từ 10.000.000đ",
+    "features": [
+      "Thiết kế responsive",
+      "Quản trị nội dung",
+      "Tối ưu SEO",
+      "Bảo mật cao"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Tư vấn Tài chính",
+    "description": "Giải pháp tài chính thông minh cho cá nhân và doanh nghiệp",
+    "price": "Từ 3.000.000đ",
+    "features": [
+      "Lập kế hoạch tài chính",
+      "Đầu tư chứng khoán",
+      "Quản lý rủi ro",
+      "Tối ưu thuế"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Đào tạo & Coaching",
+    "description": "Khóa học và huấn luyện nâng cao kỹ năng",
+    "price": "Từ 2.000.000đ",
+    "features": [
+      "Kỹ năng lãnh đạo",
+      "Kỹ năng mềm",
+      "Kỹ năng bán hàng",
+      "Phát triển cá nhân"
+    ]
+  }
+]

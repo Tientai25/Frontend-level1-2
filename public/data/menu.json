@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Trang Chủ",
+    "path": "/"
+  },
+  {
+    "id": 2,
+    "title": "Dịch Vụ",
+    "path": "/dich-vu"
+  },
+  {
+    "id": 3,
+    "title": "Ngân Hàng",
+    "path": "/ngan-hang"
+  },
+  {
+    "id": 4,
+    "title": "Tin Tức",
+    "path": "/tin-tuc"
+  },
+  {
+    "id": 5,
+    "title": "Liên Hệ",
+    "path": "/lien-he"
+  }
+]

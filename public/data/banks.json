@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Vietcombank",
+    "fullName": "Ngân hàng Ngoại thương Việt Nam",
+    "logo": "https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?w=200",
+    "description": "Ngân hàng thương mại hàng đầu Việt Nam",
+    "services": [
+      "Tài khoản tiết kiệm",
+      "Thẻ tín dụng",
+      "Vay mua nhà",
+      "Dịch vụ thanh toán"
+    ],
+    "hotline": "1900 123456",
+    "website": "https://vietcombank.com.vn"
+  },
+  {
+    "id": 2,
+    "name": "Techcombank",
+    "fullName": "Ngân hàng Kỹ thương Việt Nam",
+    "logo": "https://images.unsplash.com/photo-1554224311-88f8d41e7f5c?w=200",
+    "description": "Ngân hàng số đột phá và sáng tạo",
+    "services": [
+      "Tài khoản online",
+      "Đầu tư chứng khoán",
+      "Vay tiêu dùng",
+      "Bảo hiểm"
+    ],
+    "hotline": "1900 234567",
+    "website": "https://techcombank.com.vn"
+  },
+  {
+    "id": 3,
+    "name": "BIDV",
+    "fullName": "Ngân hàng Đầu tư và Phát triển Việt Nam",
+    "logo": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=200",
+    "description": "Ngân hàng đầu tư hàng đầu",
+    "services": [
+      "Vay doanh nghiệp",
+      "Tài khoản doanh nghiệp",
+      "Thanh toán quốc tế",
+      "Bảo lãnh"
+    ],
+    "hotline": "1900 345678",
+    "website": "https://bidv.com.vn"
+  },
+  {
+    "id": 4,
+    "name": "VietinBank",
+    "fullName": "Ngân hàng Công Thương Việt Nam",
+    "logo": "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=200",
+    "description": "Ngân hàng uy tín lâu đời",
+    "services": [
+      "Tiền gửi tiết kiệm",
+      "Vay mua xe",
+      "Dịch vụ di động",
+      "Chuyển tiền nhanh"
+    ],
+    "hotline": "1900 456789",
+    "website": "https://vietinbank.vn"
+  }
+]

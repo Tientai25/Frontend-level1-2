@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "title": "Công nghệ AI đang thay đổi thế giới",
+    "summary": "Trí tuệ nhân tạo đang cách mạng hóa mọi lĩnh vực từ y tế đến giáo dục",
+    "content": "Công nghệ AI đã và đang phát triển với tốc độ chóng mặt. Các ứng dụng AI xuất hiện trong đời sống hàng ngày từ nhận diện khuôn mặt, chatbot, đến xe tự lái...",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600",
+    "author": "Nguyễn Văn A",
+    "date": "2026-02-25",
+    "category": "Công nghệ"
+  },
+  {
+    "id": 2,
+    "title": "Thị trường chứng khoán tăng trưởng mạnh",
+    "summary": "VN-Index vượt mốc 1.200 điểm sau chuỗi ngày tăng điểm",
+    "content": "Thị trường chứng khoán Việt Nam ghi nhận phiên tăng điểm mạnh mẽ với thanh khoản đạt mức cao. Các nhà đầu tư lạc quan về triển vọng kinh tế...",
+    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600",
+    "author": "Trần Thị B",
+    "date": "2026-02-24",
+    "category": "Tài chính"
+  },
+  {
+    "id": 3,
+    "title": "Du lịch Việt Nam hút khách quốc tế",
+    "summary": "Ngành du lịch phục hồi mạnh mẽ với lượng khách tăng 150%",
+    "content": "Với các chính sách mở cửa và quảng bá hiệu quả, Việt Nam đã trở thành điểm đến hấp dẫn của du khách quốc tế. Các địa điểm nổi tiếng như Hạ Long, Phú Quốc...",
+    "image": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=600",
+    "author": "Lê Văn C",
+    "date": "2026-02-23",
+    "category": "Du lịch"
+  },
+  {
+    "id": 4,
+    "title": "Bóng đá Việt Nam vào vòng loại World Cup",
+    "summary": "Đội tuyển Việt Nam giành chiến thắng ấn tượng 3-0",
+    "content": "Trong trận đấu quan trọng, đội tuyển Việt Nam đã có màn trình diễn xuất sắc với chiến thắng 3-0 trước đối thủ mạnh...",
+    "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600",
+    "author": "Phạm Thị D",
+    "date": "2026-02-22",
+    "category": "Thể thao"
+  },
+  {
+    "id": 5,
+    "title": "Startup công nghệ Việt gọi vốn 50 triệu USD",
+    "summary": "Công ty công nghệ tài chính nhận được vòng đầu tư Series B",
+    "content": "Một startup fintech tại Việt Nam vừa công bố gọi vốn thành công 50 triệu USD từ các quỹ đầu tư quốc tế. Đây là dấu hiệu tích cực cho hệ sinh thái khởi nghiệp...",
+    "image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600",
+    "author": "Hoàng Văn E",
+    "date": "2026-02-21",
+    "category": "Công nghệ"
+  },
+  {
+    "id": 6,
+    "title": "Giá vàng tăng kỷ lục trong tuần qua",
+    "summary": "Giá vàng trong nước vượt mốc 75 triệu đồng/lượng",
+    "content": "Thị trường vàng trong nước biến động mạnh khi giá vàng thế giới tăng cao. Nhiều nhà đầu tư đổ xô mua vàng để bảo toàn tài sản...",
+    "image": "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600",
+    "author": "Trần Thị B",
+    "date": "2026-02-20",
+    "category": "Tài chính"
+  },
+  {
+    "id": 7,
+    "title": "Phú Quốc Top 10 đảo đẹp nhất châu Á",
+    "summary": "Đảo ngọc Phú Quốc lọt top bình chọn của tạp chí du lịch nổi tiếng",
+    "content": "Phú Quốc tiếp tục được vinh danh trong danh sách các đảo đẹp nhất châu Á. Với bãi biển xanh trong và cơ sở hạ tầng hiện đại...",
+    "image": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600",
+    "author": "Lê Văn C",
+    "date": "2026-02-19",
+    "category": "Du lịch"
+  },
+  {
+    "id": 8,
+    "title": "SEA Games 2026: Việt Nam giành 10 HC vàng",
+    "summary": "Đoàn thể thao Việt Nam có khởi đầu ấn tượng tại SEA Games",
+    "content": "Với 10 huy chương vàng trong ngày thi đấu đầu tiên, Việt Nam đang dẫn đầu bảng tổng sắp huy chương. Các VĐV thể hiện phong độ cao...",
+    "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=600",
+    "author": "Phạm Thị D",
+    "date": "2026-02-18",
+    "category": "Thể thao"
+  },
+  {
+    "id": 9,
+    "title": "5G phủ sóng 100% thành phố lớn",
+    "summary": "Mạng 5G chính thức hoàn thiện tại Hà Nội và TP.HCM",
+    "content": "Các nhà mạng lớn đã hoàn thành việc phủ sóng 5G tại hai thành phố lớn nhất Việt Nam. Tốc độ internet tăng gấp 10 lần so với 4G...",
+    "image": "https://images.unsplash.com/photo-1526666923127-b2970f64b422?w=600",
+    "author": "Nguyễn Văn A",
+    "date": "2026-02-17",
+    "category": "Công nghệ"
+  },
+  {
+    "id": 10,
+    "title": "Lãi suất ngân hàng có xu hướng giảm",
+    "summary": "Nhiều ngân hàng điều chỉnh giảm lãi suất huy động",
+    "content": "Trong bối cảnh thanh khoản dồi dào, các ngân hàng đồng loạt giảm lãi suất tiền gửi. Đây là cơ hội tốt cho vay vốn đầu tư...",
+    "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600",
+    "author": "Võ Thị F",
+    "date": "2026-02-16",
+    "category": "Tài chính"
+  },
+  {
+    "id": 11,
+    "title": "Đà Lạt - Điểm đến lý tưởng mùa xuân",
+    "summary": "Lễ hội hoa Đà Lạt thu hút hàng triệu du khách",
+    "content": "Thành phố ngàn hoa Đà Lạt đang trong mùa đẹp nhất năm với hàng triệu bông hoa khoe sắc. Lễ hội hoa diễn ra với nhiều hoạt động hấp dẫn...",
+    "image": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?w=600",
+    "author": "Lê Văn C",
+    "date": "2026-02-15",
+    "category": "Du lịch"
+  },
+  {
+    "id": 12,
+    "title": "Tennis Việt Nam lần đầu đoạt HCV quốc tế",
+    "summary": "Lý Hoàng Nam vô địch Vietnam Open 2026",
+    "content": "Tay vợt số 1 Việt Nam Lý Hoàng Nam đã tạo nên kỳ tích khi vô địch giải Vietnam Open. Đây là thành tích cao nhất của quần vợt Việt...",
+    "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=600",
+    "author": "Đặng Văn G",
+    "date": "2026-02-14",
+    "category": "Thể thao"
+  },
+  {
+    "id": 13,
+    "title": "Xe điện chiếm 30% thị phần ô tô Việt Nam",
+    "summary": "Xu hướng xe điện ngày càng được ưa chuộng",
+    "content": "Thị trường xe điện tại Việt Nam tăng trưởng mạnh với nhiều mẫu xe mới ra mắt. VinFast, Tesla và các hãng khác cạnh tranh gay gắt...",
+    "image": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600",
+    "author": "Nguyễn Văn A",
+    "date": "2026-02-13",
+    "category": "Công nghệ"
+  },
+  {
+    "id": 14,
+    "title": "BĐS nghỉ dưỡng hút nhà đầu tư ngoại",
+    "summary": "Bất động sản resort tăng trưởng 45% trong quý I",
+    "content": "Phân khúc BĐS nghỉ dưỡng ghi nhận mức tăng trưởng ấn tượng. Các nhà đầu tư nước ngoài đổ tiền vào dự án resort cao cấp...",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600",
+    "author": "Trần Thị B",
+    "date": "2026-02-12",
+    "category": "Tài chính"
+  },
+  {
+    "id": 15,
+    "title": "Sa Pa tuyết rơi thu hút du khách",
+    "summary": "Hiện tượng tuyết rơi hiếm gặp tại Sa Pa",
+    "content": "Sa Pa bất ngờ có tuyết rơi tạo cảnh quan đẹp như trời Âu. Hàng nghìn du khách đổ về để chiêm ngưỡng cảnh tượng hiếm có này...",
+    "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600",
+    "author": "Lê Văn C",
+    "date": "2026-02-11",
+    "category": "Du lịch"
+  },
+  {
+    "id": 16,
+    "title": "V-League 2026 sôi động với công nghệ VAR",
+    "summary": "Công nghệ VAR chính thức được áp dụng toàn bộ V-League",
+    "content": "Giải bóng đá VĐQG Việt Nam áp dụng công nghệ VAR từ mùa giải này. Các trọng tài được đào tạo kỹ lưỡng về sử dụng công nghệ...",
+    "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600",
+    "author": "Phạm Thị D",
+    "date": "2026-02-10",
+    "category": "Thể thao"
+  },
+  {
+    "id": 17,
+    "title": "Blockchain và ứng dụng trong ngân hàng",
+    "summary": "Các ngân hàng Việt triển khai công nghệ blockchain",
+    "content": "Công nghệ blockchain đang được các ngân hàng lớn áp dụng để tăng tính bảo mật và minh bạch. Giao dịch nhanh hơn, chi phí thấp hơn...",
+    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600",
+    "author": "Hoàng Văn E",
+    "date": "2026-02-09",
+    "category": "Công nghệ"
+  },
+  {
+    "id": 18,
+    "title": "Crypto được công nhận là tài sản hợp pháp",
+    "summary": "Chính phủ ban hành khung pháp lý cho tiền điện tử",
+    "content": "Nghị định mới cho phép giao dịch tiền điện tử dưới sự quản lý chặt chẽ. Bitcoin, Ethereum được phép giao dịch tại các sàn được cấp phép...",
+    "image": "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=600",
+    "author": "Võ Thị F",
+    "date": "2026-02-08",
+    "category": "Tài chính"
+  },
+  {
+    "id": 19,
+    "title": "Hạ Long Bay được UNESCO công nhận thêm di sản",
+    "summary": "Vịnh Hạ Long có thêm danh hiệu di sản thiên nhiên thế giới",
+    "content": "UNESCO chính thức công nhận thêm vùng lõi của vịnh Hạ Long là di sản thiên nhiên. Việt Nam cam kết bảo tồn và phát triển bền vững...",
+    "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=600",
+    "author": "Lê Văn C",
+    "date": "2026-02-07",
+    "category": "Du lịch"
+  },
+  {
+    "id": 20,
+    "title": "Marathon quốc tế Đà Nẵng 2026",
+    "summary": "5000 VĐV tham gia Marathon Đà Nẵng",
+    "content": "Giải Marathon quốc tế Đà Nẵng quy tụ 5000 vận động viên từ 30 quốc gia. Tuyến đường chạy ven biển tuyệt đẹp thu hút nhiều VĐV quốc tế...",
+    "image": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=600",
+    "author": "Đặng Văn G",
+    "date": "2026-02-06",
+    "category": "Thể thao"
+  },
+  {
+    "id": 21,
+    "title": "iPhone 16 sắp ra mắt tại Việt Nam",
+    "summary": "Apple chuẩn bị tung iPhone 16 với nhiều tính năng AI",
+    "content": "Thế hệ iPhone mới nhất với chip A18 Bionic và tính năng AI tích hợp sâu sẽ có mặt tại Việt Nam trong tháng 3. Giá dự kiến từ 25 triệu đồng...",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=600",
+    "author": "Nguyễn Văn A",
+    "date": "2026-02-05",
+    "category": "Công nghệ"
+  },
+  {
+    "id": 22,
+    "title": "Chứng khoán phái sinh tăng trưởng 200%",
+    "summary": "Thị trường phái sinh bùng nổ với thanh khoản kỷ lục",
+    "content": "Giao dịch phái sinh VN30 đạt thanh khoản kỷ lục 800,000 hợp đồng/phiên. Nhà đầu tư F0 đổ xô vào thị trường phái sinh...",
+    "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=600",
+    "author": "Trần Thị B",
+    "date": "2026-02-04",
+    "category": "Tài chính"
+  },
+  {
+    "id": 23,
+    "title": "Côn Đảo lọt top 10 hòn đảo thiên đường",
+    "summary": "Tạp chí Travel+Leisure bình chọn Côn Đảo",
+    "content": "Côn Đảo được vinh danh trong top 10 hòn đảo đẹp nhất thế giới. Vẻ đẹp hoang sơ và giá trị lịch sử làm nên sức hút đặc biệt...",
+    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600",
+    "author": "Lê Văn C",
+    "date": "2026-02-03",
+    "category": "Du lịch"
+  },
+  {
+    "id": 24,
+    "title": "Esports Việt Nam vô địch SEA",
+    "summary": "Đội tuyển LMHT Việt Nam đăng quang SEA Championship",
+    "content": "Với chiến thắng 3-1 trước đối thủ Thái Lan, đội tuyển Liên Minh Huyền Thoại Việt Nam lần thứ 5 vô địch khu vực Đông Nam Á...",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600",
+    "author": "Phạm Thị D",
+    "date": "2026-02-02",
+    "category": "Thể thao"
+  },
+  {
+    "id": 25,
+    "title": "Robot phục vụ xuất hiện tại nhà hàng Việt",
+    "summary": "Nhà hàng tự động hóa 100% với robot AI",
+    "content": "Chuỗi nhà hàng công nghệ cao đầu tiên tại Việt Nam sử dụng hoàn toàn robot để phục vụ. Từ nấu ăn, chuyển món đến thu ngân đều tự động...",
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600",
+    "author": "Hoàng Văn E",
+    "date": "2026-02-01",
+    "category": "Công nghệ"
+  }
+]

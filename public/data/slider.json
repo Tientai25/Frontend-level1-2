@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Chào mừng đến với Website Tin Tức",
+    "description": "Cập nhật tin tức nhanh chóng và chính xác",
+    "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800",
+    "link": "/tin-tuc"
+  },
+  {
+    "id": 2,
+    "title": "Dịch vụ chuyên nghiệp",
+    "description": "Đáp ứng mọi nhu cầu của bạn",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800",
+    "link": "/dich-vu"
+  },
+  {
+    "id": 3,
+    "title": "Kết nối Ngân hàng",
+    "description": "Hợp tác với các ngân hàng hàng đầu",
+    "image": "https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?w=800",
+    "link": "/ngan-hang"
+  }
+]

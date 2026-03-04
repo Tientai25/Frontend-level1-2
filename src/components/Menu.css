@@ -1,0 +1,58 @@
+.menu {
+  background: #34495e;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-list li {
+  margin: 0;
+}
+
+.menu-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.menu-list a:hover {
+  background: #2c3e50;
+  color: #3498db;
+}
+
+/* Class 'active' tự động thêm vào khi đang ở trang đó */
+.menu-list a.active {
+  background: #3498db;
+  color: white;
+}
+
+.menu-icon {
+  font-size: 1.2rem;
+}
+
+/* Responsive - Điện thoại */
+@media (max-width: 768px) {
+  .menu-list {
+    flex-direction: column;
+  }
+  
+  .menu-list a {
+    justify-content: center;
+    padding: 0.8rem;
+  }
+}
